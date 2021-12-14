@@ -12,15 +12,51 @@
             padding: 0;
             box-sizing: border-box;
         }
+        
+        button {
+            cursor: pointer;
+        }
+        
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(22, 27, 34, 0.5);
+            visibility: hidden;
+            padding: 35px;
+        }
+        
+        .popup_content {
+            width: 100%;
+            height: 100%;
+            background-color: grey;
+            overflow: scroll;
+        }
+        
+        .active {
+            visibility: visible;
+            animation: popup 0.5s;
+        }
+        
+        @keyframes popup {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <!-- розкоментовуйте скріпти по одному щоб не було конфліктів назв -->
-    <!-- <script src="js/classwork.js"></script> -->
+    <script src="js/classwork.js"></script>
     <!-- <script src="js/additional.js"></script> -->
-    <script src="js/homework.js"></script>
+    <!-- <script src="js/homework.js"></script> -->
 
 </body>
 
